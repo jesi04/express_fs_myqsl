@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="icon" type="image/x-icon" href="../public/favicon.ico" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- űrlapos kód beágyazva-->
+
+  <div class="container">
+
+    <header class="header">
+      <h1 id="title" class="text-center">
+        Kérdőív
+      </h1>
+    </header>
+
+    <form class="form-horizontal">
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Neved</label>  
+        <div class="col-md-4">
+        <input id="textinput" name="textinput" type="text" placeholder="Írd be a neved" class="form-control input-md">
+         
+        </div>
+      </div>
+      
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="textinput">Korod</label>  
+        <div class="col-md-4">
+        <input id="numberinput" name="numberinput" type="number" placeholder="Írd be a korod" class="form-control input-md">
+        
+        </div>
+      </div>
+      
+      <br>
+      <!-- Select Basic -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="selectbasic">Nemed</label>
+        <div class="col-md-4">
+          <select id="selectbasic" name="selectbasic" class="form-control">
+            <option value="1">Fiú</option>
+            <option value="2">Lány</option>
+          </select>
+        </div>
+      </div>
+      
+      <br>
+      <!-- Multiple Radios (inline) -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="radios">Hány órát töltesz a gép előtt egy héten?</label>
+        <div class="col-md-4"> 
+          <label class="radio-inline" for="radios-0">
+            <input type="radio" name="radios" id="radios-0" value="1" checked="checked">
+            0-5
+          </label> 
+          <label class="radio-inline" for="radios-1">
+            <input type="radio" name="radios" id="radios-1" value="2">
+            6-10
+          </label> 
+          <label class="radio-inline" for="radios-2">
+            <input type="radio" name="radios" id="radios-2" value="3">
+            11-15
+          </label> 
+          <label class="radio-inline" for="radios-3">
+            <input type="radio" name="radios" id="radios-3" value="4">
+            15+
+          </label>
+        </div>
+      </div>
+      <br>
+      <!-- Multiple Checkboxes -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="checkboxes">Milyen eszközt használsz?</label>
+        <div class="col-md-4">
+        <div class="checkbox">
+          <label for="checkboxes-0">
+            <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+            PC
+          </label>
+        </div>
+        <div class="checkbox">
+          <label for="checkboxes-1">
+            <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+            Laptop
+          </label>
+        </div>
+        </div>
+      </div>
+      <br>
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="singlebutton"></label>
+        <div class="col-md-4">
+          <button id="singlebutton" name="singlebutton" class="btn btn-primary">Küldés</button>
+        </div>
+      </div>
+      
+      
+      </form>
+  </div>
+
+  <!-- űrlapos kód beágyazva-->
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
